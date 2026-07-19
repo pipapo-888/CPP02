@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 19:28:20 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/19 20:01:55 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,13 @@ private:
 public:
 	Fixed();
 	Fixed(const Fixed &obj);
+	Fixed(const int num);
+	Fixed(const float value);
 	Fixed &operator=(const Fixed &obj);
 	~Fixed();
 	int getRawBits() const;
 	void setRawBits(int const raw);
+	
 };
 
 #endif

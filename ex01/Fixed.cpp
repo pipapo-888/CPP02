@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 19:44:24 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/19 20:00:56 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,16 @@
 Fixed::Fixed() : _fixedPointNum(0)
 {
 	std::cout << "Default constructor called\n";
+}
+
+Fixed::Fixed(const int num) : _fixedPointNum(num)
+{
+	std::cout << "Int constructor called\n";
+}
+
+Fixed::Fixed(const float value):_fixedPointNum(value)
+{
+	std::cout << "Float constructor called\n";
 }
 
 Fixed::Fixed(const Fixed &obj) : _fixedPointNum(obj._fixedPointNum)
