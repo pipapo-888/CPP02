@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:14 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 19:05:26 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/19 19:22:44 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 int main(void)
 {
 	Fixed a;
-	a.setRawBits(2);
 	Fixed b(a);
 	Fixed c;
 	
