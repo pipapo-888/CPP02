@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 16:19:05 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/19 18:59:49 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,16 @@
 class Fixed
 {
 	private:
-
-
+		int _fixedPointNum;
+		static const int _fBits;
 	
 	public:
 		Fixed();
+		Fixed(const Fixed &obj);
+		Fixed& operator = (const Fixed& obj);
 		~Fixed();
-	
+		int getRawBits();
+		void setRawBits(int const raw);
 };
 
 #endif
