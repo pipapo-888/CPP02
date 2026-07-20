@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 20:01:55 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/20 15:48:35 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ public:
 	~Fixed();
 	int getRawBits() const;
 	void setRawBits(int const raw);
-	
+	float toFloat() const;
+	int toInt() const;
 };
 
 #endif
