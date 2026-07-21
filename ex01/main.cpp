@@ -6,14 +6,13 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:14 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/20 19:35:16 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/21 23:28:31 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Fixed.hpp"
-
 #include <iostream>
+
 int main(void)
 {
 	Fixed a;
