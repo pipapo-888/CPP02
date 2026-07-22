@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/21 23:28:53 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/22 13:39:17 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Fixed::Fixed(const Fixed &obj) : _fixedPointNum(obj._fixedPointNum)
 	std::cout << "Copy constructor called\n";
 }
 
-Fixed &Fixed::operator= (const Fixed &obj)
+Fixed &Fixed::operator=(const Fixed &obj)
 {
 	std::cout << "Copy assignment operator called\n";
 	_fixedPointNum = obj._fixedPointNum;
@@ -54,4 +54,19 @@ int Fixed::getRawBits() const
 void Fixed::setRawBits(int const raw)
 {
 	_fixedPointNum = raw;
+}
+
+float Fixed::toFloat() const
+{
+	
+}
+
+int Fixed::toInt() const
+{
+	
+}
+
+std::ostream &operator<<(std::ostream &out, const Fixed &obj)
+{
+	out << obj.getRawBits() << std::endl;
 }

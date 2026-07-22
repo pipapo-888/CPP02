@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/20 15:48:35 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/22 12:54:07 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,7 @@ public:
 	float toFloat() const;
 	int toInt() const;
 };
+
+std::ostream &operator<<(std::ostream &out, const Fixed &obj);
 
 #endif
