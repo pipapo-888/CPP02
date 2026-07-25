@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/25 18:25:05 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/25 18:56:12 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,28 @@ float Fixed::operator*(const Fixed &obj) const
 float Fixed::operator/(const Fixed &obj) const
 {
 	return (toFloat() / obj.toFloat());
+}
+
+Fixed Fixed::operator++(int n)
+{
+	Fixed tmp(*this);
+	_fixedPointNum += (1 << _fBits);
+	return tmp;
+}
+
+Fixed Fixed::operator--(int n)
+{
+	
+}
+
+Fixed &Fixed::operator++()
+{
+	
+}
+
+Fixed &Fixed::operator--()
+{
+	
 }
 
 Fixed::~Fixed()
