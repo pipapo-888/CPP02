@@ -6,12 +6,14 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/22 12:54:07 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/25 13:58:10 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 #define FIXED_HPP
+
+#include <iostream>
 
 class Fixed
 {
