@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/25 13:58:10 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/25 18:27:46 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,25 @@ public:
 	Fixed(const Fixed &obj);
 	Fixed(const int num);
 	Fixed(const float value);
-	Fixed &operator=(const Fixed &obj);
 	~Fixed();
+	
+	Fixed &operator=(const Fixed &obj);
+	bool operator>(const Fixed &obj) const;
+	bool operator<(const Fixed &obj) const;
+	bool operator>=(const Fixed &obj) const;
+	bool operator<=(const Fixed &obj) const;
+	bool operator==(const Fixed &obj) const;
+	bool operator!=(const Fixed &obj) const;
+	float operator+(const Fixed &obj) const;
+	float operator-(const Fixed &obj) const;
+	float operator*(const Fixed &obj) const;
+	float operator/(const Fixed &obj) const;
+
+	Fixed &operator++(int);
+	Fixed &operator--(int);
+	Fixed operator++();
+	Fixed operator--();
+	
 	int getRawBits() const;
 	void setRawBits(int const raw);
 	float toFloat() const;

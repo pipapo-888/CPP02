@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/25 14:50:44 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/25 18:25:05 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,57 @@ Fixed &Fixed::operator=(const Fixed &obj)
 	std::cout << "Copy assignment operator called\n";
 	_fixedPointNum = obj._fixedPointNum;
 	return *this;
+}
+
+
+bool Fixed::operator>(const Fixed &obj) const
+{
+	return (_fixedPointNum > obj._fixedPointNum);
+}
+
+bool Fixed::operator<(const Fixed &obj) const
+{
+	return (_fixedPointNum < obj._fixedPointNum);
+}
+
+bool Fixed::operator>=(const Fixed &obj) const
+{
+	return (_fixedPointNum >= obj._fixedPointNum);
+}
+
+bool Fixed::operator<=(const Fixed &obj) const
+{
+	return (_fixedPointNum <= obj._fixedPointNum);
+}
+
+bool Fixed::operator==(const Fixed &obj) const
+{
+	return (_fixedPointNum == obj._fixedPointNum);
+}
+
+bool Fixed::operator!=(const Fixed &obj) const
+{
+	return (_fixedPointNum != obj._fixedPointNum);
+}
+
+float Fixed::operator+(const Fixed &obj) const
+{
+	return (toFloat() + obj.toFloat());
+}
+
+float Fixed::operator-(const Fixed &obj) const
+{
+	return (toFloat() - obj.toFloat());
+}
+
+float Fixed::operator*(const Fixed &obj) const
+{
+	return (toFloat() * obj.toFloat());
+}
+
+float Fixed::operator/(const Fixed &obj) const
+{
+	return (toFloat() / obj.toFloat());
 }
 
 Fixed::~Fixed()
