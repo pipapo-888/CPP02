@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/26 19:23:37 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/26 20:55:34 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,14 +135,14 @@ Fixed &Fixed::min(Fixed &f1, Fixed &f2)
 	return f2;
 }
 
-Fixed const &Fixed::max(const Fixed& f1, const Fixed& f2)
+Fixed const &Fixed::max(const Fixed &f1, const Fixed &f2)
 {
 	if (f1 > f2)
 		return f1;
 	return f2;
 }
 
-Fixed const &Fixed::min(const Fixed& f1, const Fixed& f2)
+Fixed const &Fixed::min(const Fixed &f1, const Fixed &f2)
 {
 	if (f1 < f2)
 		return f1;
