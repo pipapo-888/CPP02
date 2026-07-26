@@ -6,12 +6,12 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/26 20:56:20 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/26 20:56:31 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 #include "Fixed.hpp"
 
 Fixed::Fixed() : _fixedPointNum(0)
