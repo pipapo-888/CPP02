@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/25 18:49:48 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/26 13:25:27 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,15 @@ public:
 	float operator*(const Fixed &obj) const;
 	float operator/(const Fixed &obj) const;
 
-	Fixed operator++(int n);
-	Fixed operator--(int n);
+	Fixed operator++(int);
+	Fixed operator--(int);
 	Fixed &operator++();
 	Fixed &operator--();
+
+	static Fixed &max(Fixed &f1, Fixed &f2);
+	static Fixed &min(Fixed &f1, Fixed &f2);
+	static Fixed const &max(const Fixed &f1, const Fixed &f2);
+	static Fixed const &min(const Fixed &f1, const Fixed &f2);
 
 	int getRawBits() const;
 	void setRawBits(int const raw);
