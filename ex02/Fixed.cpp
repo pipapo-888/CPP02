@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/26 13:31:54 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/26 19:23:37 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,24 +71,28 @@ bool Fixed::operator!=(const Fixed &obj) const
 	return (_fixedPointNum != obj._fixedPointNum);
 }
 
-float Fixed::operator+(const Fixed &obj) const
+Fixed Fixed::operator+(const Fixed &obj) const
 {
-	return (toFloat() + obj.toFloat());
+	Fixed tmp(toFloat() + obj.toFloat());
+	return (tmp);
 }
 
-float Fixed::operator-(const Fixed &obj) const
+Fixed Fixed::operator-(const Fixed &obj) const
 {
-	return (toFloat() - obj.toFloat());
+	Fixed tmp(toFloat() - obj.toFloat());
+	return (tmp);
 }
 
-float Fixed::operator*(const Fixed &obj) const
+Fixed Fixed::operator*(const Fixed &obj) const
 {
-	return (toFloat() * obj.toFloat());
+	Fixed tmp(toFloat() * obj.toFloat());
+	return (tmp);
 }
 
-float Fixed::operator/(const Fixed &obj) const
+Fixed Fixed::operator/(const Fixed &obj) const
 {
-	return (toFloat() / obj.toFloat());
+	Fixed tmp(toFloat() / obj.toFloat());
+	return (tmp);
 }
 
 Fixed Fixed::operator++(int)

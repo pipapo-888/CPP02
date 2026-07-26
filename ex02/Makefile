@@ -6,7 +6,7 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/19 16:16:52 by knomura           #+#    #+#              #
-#    Updated: 2026/07/25 16:05:06 by knomura          ###   ########.fr        #
+#    Updated: 2026/07/26 19:12:16 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Fixed
 
 CXX = c++
 
-# CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp Fixed.cpp
 

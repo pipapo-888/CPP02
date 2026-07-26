@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:45 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/26 13:25:27 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/26 19:22:00 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,10 @@ public:
 	bool operator<=(const Fixed &obj) const;
 	bool operator==(const Fixed &obj) const;
 	bool operator!=(const Fixed &obj) const;
-	float operator+(const Fixed &obj) const;
-	float operator-(const Fixed &obj) const;
-	float operator*(const Fixed &obj) const;
-	float operator/(const Fixed &obj) const;
+	Fixed operator+(const Fixed &obj) const;
+	Fixed operator-(const Fixed &obj) const;
+	Fixed operator*(const Fixed &obj) const;
+	Fixed operator/(const Fixed &obj) const;
 
 	Fixed operator++(int);
 	Fixed operator--(int);
