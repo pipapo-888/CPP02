@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:17:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 19:44:24 by knomura          ###   ########.fr       */
+/*   Updated: 2026/08/12 15:28:58 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Fixed::Fixed(const Fixed &obj) : _fixedPointNum(obj._fixedPointNum)
 	std::cout << "Copy constructor called\n";
 }
 
-Fixed &Fixed::operator= (const Fixed &obj)
+Fixed &Fixed::operator=(const Fixed &obj)
 {
 	std::cout << "Copy assignment operator called\n";
 	_fixedPointNum = obj._fixedPointNum;
